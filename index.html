@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .photo img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .two-col {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .label {
+      font-weight: bold;
+      width: 180px;
+      flex-shrink: 0;
+    }
+    .bordered {
+      border-top: 2px solid #e0cbb3;
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+    .text {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .skills span {
+      font-weight: bold;
+    }
+    .text a {
+      color: #4a4a4a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+    <div>
+      <div class="two-col">
+        <div class="label">
+          <div><img src="icon.jpg" alt="Шаганов Егор" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover;"></div>
+        </div>
+        <div class="text">
+          <div style="font-size: 28px; font-weight: bold;">Шаганов Егор</div>
+          <div style="color: #d3a272; font-size: 18px; margin: 5px 0 10px;">Frontend-разработчик</div>
+          <div style="color: #6c6c6c; font-size: 14px;">
+            <div><span style="color: #c27c7c;">Тел.</span> +7 901 281 12 46</div>
+            <div>
+              <a href="https://github.com/shotganov" style="color: #1a1a1a; text-decoration: none;">Github</a> | <a href="mailto:shaganovey@gmail.com" style="color: #1a1a1a; text-decoration: none;">shaganovey@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ОБО МНЕ</div>
+        <div class="text">
+          Я — начинающий разработчик и студент 4 курса. В рамках учебных и личных проектов разработал полнофункциональное веб-приложение доставки суши с использованием React на фронтенде и ASP.NET на бэкенде, реализованным по принципам чистой архитектуры.<br><br>
+          Также создал десктопное приложение с аналогичным функционалом на WPF с архитектурой MVVM. В свободное время изучаю новые подходы в разработке интерфейсов и backend-интеграции, развиваю навыки в UI/UX и паттернах проектирования.<br><br>
+          Также реализовал собственный арифметический кодер и декодер с использованием WPF.
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">НАВЫКИ</div>
+        <div class="text skills">
+          JavaScript, TypeScript, React, CSS3, HTML5, С#, WPF, Windows Forms, ASP.NET, C++, Python, MySQL, MVVM
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ВЫСШЕЕ ОБРАЗОВАНИЕ</div>
+        <div class="text">
+          <strong>Ивановский государственный энергетический университет</strong><br>
+          Бакалавр. Направление подготовки: Программная инженерия<br>
+          Период обучения: 2022 — 2026
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
