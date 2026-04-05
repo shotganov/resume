@@ -1,0 +1,320 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .photo img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .two-col {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .label {
+      font-weight: bold;
+      width: 180px;
+      flex-shrink: 0;
+    }
+    .bordered {
+      border-top: 2px solid #e0cbb3;
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+    .text {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .skills span {
+      font-weight: bold;
+    }
+    .text a {
+      color: #4a4a4a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Резюме</h1>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">
+          <div><img src="111.jpg" alt="Шаганов Егор" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;"></div>
+        </div>
+        <div class="text">
+          <div style="font-size: 28px; font-weight: bold;">Шаганов Егор</div>
+          <div style="color: #d3a272; font-size: 18px; margin: 5px 0 10px;">Frontend-разработчик (React / Angular)</div>
+          <div style="color: #6c6c6c; font-size: 14px;">
+            <div><span style="color: #c27c7c;">Тел.</span> +7 901 281 12 46</div>
+            <div>
+              <a href="https://github.com/shotganov" style="color: #1a1a1a; text-decoration: none;">Github</a> | <a href="mailto:shaganovey@gmail.com" style="color: #1a1a1a; text-decoration: none;">shaganovey@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ОБО МНЕ</div>
+        <div class="text">
+          Я — Frontend-разработчик и студент 4 курса.
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ПРОЕКТЫ</div>
+        <div class="text">
+          В рамках учебных и личных проектов разработал полнофункциональное веб-приложение доставки суши с использованием
+          React на фронтенде и ASP.NET на бэкенде, реализованное с применением принципов чистой архитектуры. Также
+          реализовал приложение T-News на чистом HTML, CSS, JavaScript с бэкендом на NestJS — лента постов с возможностью
+          ставить лайки, оставлять комментарии и подписываться на авторов.
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">НАВЫКИ</div>
+        <div class="text skills">
+          JavaScript, TypeScript, CSS3, HTML5, React, Redux Toolkit, Angular, Git, С#, ASP.NET, C++, Python, MySQL
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ВЫСШЕЕ ОБРАЗОВАНИЕ</div>
+        <div class="text">
+        <strong>Ивановский государственный энергетический университет</strong><br>
+          Бакалавр. Направление подготовки: Программная инженерия<br>
+          Период обучения: 2022 — 2026
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">КУРСЫ</div>
+        <div class="text">
+          <strong>Т-Академия</strong> - Frontend-разработка.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .two-col {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+      width: 180px;
+      flex-shrink: 0;
+    }
+
+    .bordered {
+      border-top: 2px solid #e0cbb3;
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+
+    .text {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .skills div {
+      margin-bottom: 6px;
+    }
+
+    .skills span {
+      font-weight: bold;
+    }
+
+    .project {
+      margin-bottom: 15px;
+    }
+
+    .project-title {
+      font-weight: bold;
+    }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Резюме</h1>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">
+          <img src="111.jpg" alt="Шаганов Егор"
+            style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
+        </div>
+        <div class="text">
+          <div style="font-size: 28px; font-weight: bold;">Шаганов Егор</div>
+          <div style="color: #d3a272; font-size: 18px; margin: 5px 0 10px;">
+            Frontend-разработчик (React / Angular)
+          </div>
+
+          <div style="color: #6c6c6c; font-size: 14px;">
+            <div><span style="color: #c27c7c;">Тел.</span> +7 901 281 12 46</div>
+            <div>
+              <a href="https://github.com/shotganov">Github</a> |
+              <a href="mailto:shaganovey@gmail.com">shaganovey@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ОБО МНЕ</div>
+        <div class="text">
+          Frontend-разработчик с опытом создания SPA на React и Angular. Разработал 3 full-stack приложения с интеграцией REST API, JWT-авторизацией и управлением состоянием (Redux Toolkit, Context API). Владею TypeScript, имею опыт backend-разработки на ASP.NET и NestJS. Применяю принципы чистой архитектуры и пишу поддерживаемый код.
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ПРОЕКТЫ</div>
+        <div class="text">
+
+          <div class="project">
+            <div class="project-title">Сервис доставки суши (React + ASP.NET)</div>
+            Full-stack веб-приложение для заказа суши.
+            <ul>
+              <li>Frontend на React с использованием Context API и кастомных хуков</li>
+              <li>Backend на ASP.NET с применением Clean Architecture</li>
+            </ul>
+            <!-- Добавь ссылку если есть -->
+            <!-- <a href="#">GitHub / Demo</a> -->
+          </div>
+
+          <div class="project">
+            <div class="project-title">T-News (HTML/CSS/JS + NestJS)</div>
+            Веб-приложение социальной ленты.
+            <ul>
+              <li>Frontend на HTML/CSS/JS</li>
+              <li>Backend на NestJS</li>
+            </ul>
+          </div>
+          
+          <div class="project">
+            <div class="project-title">Глобальный чат (React + Express)</div>
+            Full-stack веб-приложение глобального чата.
+            <ul>
+              <li>Frontend на React + TypeScript с использованием Redux Toolkit</li>
+              <li>Backend на Express</li>
+            </ul>
+          </div>
+         
+          <!-- Разработал full-stack веб-приложение глобального чата.
+          Frontend на React + TypeScript с использованием Redux Toolkit
+          Backend на Express с JWT-авторизацией и REST API -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">НАВЫКИ</div>
+        <div class="text skills">
+          <div><span>Frontend:</span> React, TypeScript, JavaScript, Redux Toolkit, Context API</div>
+          <div><span>Backend:</span> ASP.NET, NestJS</div>
+          <div><span>Базы данных:</span> MySQL</div>
+          <div><span>Инструменты:</span> Git</div>
+          <div><span>Дополнительно:</span> C#, C++, Python</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">ВЫСШЕЕ ОБРАЗОВАНИЕ</div>
+        <div class="text">
+          <strong>Ивановский государственный энергетический университет</strong><br>
+          Бакалавр, Программная инженерия<br>
+          2022 — 2026
+        </div>
+      </div>
+    </div>
+
+    <div class="section bordered">
+      <div class="two-col">
+        <div class="label">КУРСЫ</div>
+        <div class="text">
+          <strong>Т-Академия</strong> — Frontend-разработка (в процессе)
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
