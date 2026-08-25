@@ -86,6 +86,26 @@
       border: 4px solid #f1e3d3;
     }
 
+    .experience {
+      margin-bottom: 24px;
+    }
+
+    .experience:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-title {
+      font-weight: 700;
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+
+    .experience-meta {
+      color: #777;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
     .project {
       margin-bottom: 18px;
     }
@@ -176,121 +196,308 @@
   <div class="container">
     <h1>Резюме</h1>
 
+    <!-- Шапка -->
     <div class="section">
       <div class="two-col">
-        <div class="label"><img class="photo" src="photo_2026-04-05_14-08-061.jpg" alt="Шаганов Егор"></div>
+        <div class="label">
+          <img class="photo" src="photo_2026-04-05_14-08-061.jpg" alt="Шаганов Егор">
+        </div>
+
         <div class="text">
           <div class="header-name">Шаганов Егор</div>
           <div class="header-role">React-разработчик</div>
+
           <div class="muted">
             <div><strong>Тел.:</strong> +7 901 281 12 46</div>
-            <div>г. Иваново · удалённый или офисный формат</div>
-            <div><a href="https://github.com/shotganov" target="_blank" rel="noopener">github.com/shotganov</a> | <a
-                href="mailto:shaganovey@gmail.com">shaganovey@gmail.com</a></div>
+            <div>г. Иваново · удалённый или офисный формат · готов к переезду</div>
+            <div>
+              <a href="https://github.com/shotganov" target="_blank" rel="noopener">
+                github.com/shotganov
+              </a>
+              |
+              <a href="mailto:shaganovey@gmail.com">
+                shaganovey@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Обо мне -->
     <div class="section">
       <div class="two-col">
         <div class="label">Обо мне</div>
-        <div class="text">Бакалавр по направлению «Программная инженерия». Разрабатываю SPA на React и TypeScript:
-          работа с серверным состоянием, интеграция REST API и WebSocket, адаптивная вёрстка. В своих проектах писал
-          backend на NestJS и ASP.NET Core и проектировал API.</div>
+
+        <div class="text">
+          Бакалавр по направлению «Программная инженерия». Frontend-разработчик
+          с практическим опытом разработки на React и TypeScript. Работал над
+          веб-приложениями в команде, реализовывал пользовательские интерфейсы,
+          интеграцию с REST API и переиспользуемые компоненты. В учебных и
+          собственных проектах также работал с NestJS, ASP.NET Core,
+          PostgreSQL и WebSocket.
+        </div>
       </div>
     </div>
 
+    <!-- Навыки -->
     <div class="section">
       <div class="two-col">
         <div class="label">Навыки</div>
+
         <div class="text skills">
-          <div><span>Frontend:</span> React, JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, Flexbox, Grid, адаптивная
-            вёрстка</div>
-          <div><span>SPA и состояние:</span> Redux Toolkit, RTK Query, TanStack Query, Context API, Feature-Sliced
-            Design (FSD)</div>
-          <div><span>UI и инструменты:</span> Ant Design, Material UI, Tailwind CSS, Storybook, Figma, Webpack, Git,
-            Jest, GitLab CI</div>
-          <div><span>Интеграции:</span> REST API, WebSocket, JWT, Swagger · NestJS, Express (Node.js), ASP.NET Core
-            (C#), SQL</div>
+          <div>
+            <span>Frontend:</span>
+            React, JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS,
+            Flexbox, Grid, адаптивная вёрстка
+          </div>
+
+          <div>
+            <span>SPA и состояние:</span>
+            Redux Toolkit, RTK Query, TanStack Query, Context API,
+            Feature-Sliced Design (FSD)
+          </div>
+
+          <div>
+            <span>UI и инструменты:</span>
+            Ant Design, Material UI, Tailwind CSS, Storybook, Figma,
+            Webpack, Git, Jest, GitLab CI
+          </div>
+
+          <div>
+            <span>Интеграции:</span>
+            REST API, WebSocket, JWT, Swagger · NestJS, Express (Node.js),
+            ASP.NET Core (C#), SQL
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Опыт -->
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Опыт работы</div>
+
+        <div class="text">
+          <div class="experience">
+            <div class="experience-title">
+              Инвольта, Иваново — Frontend-разработчик (практика)
+            </div>
+
+            <div class="experience-meta">
+              3 месяца · React · TypeScript
+            </div>
+
+            <ul>
+              <li>
+                Разрабатывал frontend веб-приложения на React и TypeScript
+                в составе команды.
+              </li>
+
+              <li>
+                Реализовывал пользовательские интерфейсы и отдельные
+                функциональные модули проекта.
+              </li>
+
+              <li>
+                Интегрировал frontend с REST API, работал с получением,
+                обработкой и отображением серверных данных.
+              </li>
+
+              <li>
+                Разрабатывал переиспользуемые React-компоненты и поддерживал
+                существующие UI-модули.
+              </li>
+
+              <li>
+                Реализовывал административные интерфейсы и элементы
+                управления.
+              </li>
+
+              <li>
+                Исправлял ошибки, дорабатывал существующий функционал
+                и участвовал в рефакторинге.
+              </li>
+
+              <li>
+                Работал в команде с использованием Git и взаимодействовал
+                с другими разработчиками при реализации смежных задач.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Проекты -->
     <div class="section">
       <div class="two-col">
         <div class="label">Проекты</div>
+
         <div class="text">
+
+          <!-- Ripple -->
           <div class="project">
-            <div class="project-title">Социальная сеть<span class="repo"><a href="https://github.com/shotganov/Ripple"
-                  target="_blank" rel="noopener">GitHub ↗</a></span></div>
-            <div class="project-stack">React · TypeScript · TanStack Query · Redux Toolkit · Material UI · NestJS ·
-              WebSocket · PostgreSQL · Prisma · Jest · GitLab CI</div>
-            Веб-приложение социальной сети с лентой постов и взаимодействием пользователей.
+            <div class="project-title">
+              Социальная сеть
+              <span class="repo">
+                <a href="https://github.com/shotganov/Ripple" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </span>
+            </div>
+
+            <div class="project-stack">
+              React · TypeScript · TanStack Query · Redux Toolkit ·
+              Material UI · NestJS · WebSocket · PostgreSQL · Prisma ·
+              Jest · GitLab CI
+            </div>
+
+            Веб-приложение социальной сети с лентой постов и взаимодействием
+            пользователей.
+
             <ul>
-              <li>Построил структуру проекта по Feature-Sliced Design: разделение на слои, переиспользуемые модули и
-                контроль направления импортов</li>
-              <li>Организовал работу с серверными данными через TanStack Query: бесконечная лента, кеширование и
-                оптимистичные обновления интерфейса</li>
-              <li>Реализовал личные сообщения в реальном времени через WebSocket</li>
-              <li>Разработал административную часть с модерацией контента, статистикой, логированием и CI-проверками
+              <li>
+                Построил структуру проекта по Feature-Sliced Design:
+                разделение на слои, переиспользуемые модули и контроль
+                направления импортов.
+              </li>
+
+              <li>
+                Организовал работу с серверными данными через TanStack Query:
+                бесконечная лента, кеширование и оптимистичные обновления
+                интерфейса.
+              </li>
+
+              <li>
+                Реализовал личные сообщения в реальном времени через WebSocket.
+              </li>
+
+              <li>
+                Разработал административную часть с модерацией контента,
+                статистикой, логированием и CI-проверками.
               </li>
             </ul>
           </div>
 
+          <!-- Delivery Sushi -->
           <div class="project">
-            <div class="project-title">Доставка еды<span class="repo"><a
-                  href="https://github.com/shotganov/DeliverySushi" target="_blank" rel="noopener">GitHub ↗</a></span>
+            <div class="project-title">
+              Доставка еды
+              <span class="repo">
+                <a href="https://github.com/shotganov/DeliverySushi" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </span>
             </div>
-            <div class="project-stack">React · TypeScript · ASP.NET Core · SQL Server · Entity Framework · JWT</div>
-            Fullstack веб-приложение для сервиса доставки еды с пользовательским интерфейсом и админ-панелью.
+
+            <div class="project-stack">
+              React · TypeScript · ASP.NET Core · SQL Server ·
+              Entity Framework · JWT
+            </div>
+
+            Fullstack веб-приложение для сервиса доставки еды
+            с пользовательским интерфейсом и админ-панелью.
+
             <ul>
-              <li>Спроектировал сценарий заказа от каталога и корзины до изменения статуса в административной панели
+              <li>
+                Спроектировал сценарий заказа от каталога и корзины
+                до изменения статуса в административной панели.
               </li>
-              <li>Спроектировал backend по принципам чистой архитектуры: слои Domain, Application, Infrastructure и API,
-                бизнес-логика изолирована от инфраструктуры</li>
-              <li>Интегрировал React-клиент с защищённым REST API: аутентификация через ASP.NET Identity и JWT</li>
+
+              <li>
+                Спроектировал backend по принципам чистой архитектуры:
+                слои Domain, Application, Infrastructure и API,
+                бизнес-логика изолирована от инфраструктуры.
+              </li>
+
+              <li>
+                Интегрировал React-клиент с защищённым REST API:
+                аутентификация через ASP.NET Identity и JWT.
+              </li>
             </ul>
           </div>
 
+          <!-- Global Chat -->
           <div class="project">
-            <div class="project-title">Глобальный чат<span class="repo"><a
-                  href="https://github.com/shotganov/GlobalChat" target="_blank" rel="noopener">GitHub ↗</a></span>
+            <div class="project-title">
+              Глобальный чат
+              <span class="repo">
+                <a href="https://github.com/shotganov/GlobalChat" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </span>
             </div>
-            <div class="project-stack">React · TypeScript · Redux Toolkit · Express · JWT</div>
-            SPA глобального чата с авторизацией и защищённым доступом к сообщениям.
+
+            <div class="project-stack">
+              React · TypeScript · Redux Toolkit · Express · JWT
+            </div>
+
+            SPA глобального чата с авторизацией и защищённым доступом
+            к сообщениям.
+
             <ul>
-              <li>Оптимизировал отображение истории сообщений виртуализацией</li>
-              <li>Организовал управление состоянием и авторизацией в клиенте через Redux Toolkit и JWT</li>
-              <li>Разработал и задокументировал API на Express: JWT-аутентификация, хеширование паролей bcrypt и Swagger
+              <li>
+                Оптимизировал отображение истории сообщений виртуализацией.
+              </li>
+
+              <li>
+                Организовал управление состоянием и авторизацией в клиенте
+                через Redux Toolkit и JWT.
+              </li>
+
+              <li>
+                Разработал и задокументировал API на Express:
+                JWT-аутентификация, хеширование паролей bcrypt и Swagger.
               </li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
 
+    <!-- Образование -->
     <div class="section">
       <div class="two-col">
         <div class="label">Образование</div>
-        <div class="text"><strong>Ивановский государственный энергетический университет</strong><br>Бакалавриат,
-          Программная инженерия<br>2022 — 2026</div>
+
+        <div class="text">
+          <strong>
+            Ивановский государственный энергетический университет
+          </strong>
+          <br>
+          Бакалавриат, Программная инженерия
+          <br>
+          2022 — 2026
+        </div>
       </div>
     </div>
 
+    <!-- Курсы -->
     <div class="section">
       <div class="two-col">
         <div class="label">Курсы</div>
-        <div class="text"><strong>Т-Академия</strong> — Frontend-разработка</div>
+
+        <div class="text">
+          <strong>Т-Академия</strong> — Frontend-разработка
+        </div>
       </div>
     </div>
 
+    <!-- Языки -->
     <div class="section">
       <div class="two-col">
         <div class="label">Языки</div>
-        <div class="text"><strong>Русский</strong> — родной<br><strong>Английский</strong> — B1</div>
+
+        <div class="text">
+          <strong>Русский</strong> — родной
+          <br>
+          <strong>Английский</strong> — B1
+        </div>
       </div>
     </div>
+
   </div>
 </body>
 
