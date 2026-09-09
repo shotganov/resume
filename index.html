@@ -45,6 +45,9 @@
       text-transform: uppercase;
       letter-spacing: .04em;
       font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
     .section {
@@ -94,10 +97,36 @@
       margin-bottom: 0;
     }
 
+    .experience-period {
+      color: #5f5f5f;
+      font-size: 13px;
+      line-height: 1.4;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
     .experience-title {
       font-weight: 700;
       font-size: 17px;
-      margin-bottom: 2px;
+      margin-bottom: 0;
+      line-height: 1.3;
+    }
+
+    .experience-city {
+      color: #666;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .experience-role {
+      font-weight: 500;
+      font-size: 17px;
+      margin-top: 2px;
+      margin-bottom: 6px;
+      line-height: 1.3;
     }
 
     .experience-meta {
@@ -275,18 +304,32 @@
     <!-- Опыт -->
     <div class="section">
       <div class="two-col">
-        <div class="label">Опыт работы</div>
+        <div class="label">
+          Опыт работы
+          <div class="experience-period">
+            Июнь 2025 — <br>
+            Июнь 2026 <br>
+            1 год
+          </div>
+        
+        </div>
 
         <div class="text">
           <div class="experience">
             <div class="experience-title">
-              Инвольта, Иваново — Frontend-разработчик (практика)
+              Инвольта
+            </div>
+            <div class="experience-city">
+              Иваново (Ивановская область)
+            </div>
+            <div class="experience-role">
+              Frontend-разработчик
             </div>
 
             <div class="experience-meta">
-              3 месяца · React · TypeScript · Next.js · Redux Toolkit
+              React · TypeScript · Next.js · Redux Toolkit
             </div>
-            
+
             <ul>
               <li>
                 Разрабатывал frontend веб-приложения на React и Next.js
