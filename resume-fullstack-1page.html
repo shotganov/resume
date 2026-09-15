@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме — Шаганов Егор — Fullstack-разработчик</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f6f2; color: #1f1f1f; margin: 0; padding: 28px; font-size: 14px; }
+    .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 30px 34px; box-shadow: 0 10px 30px rgba(0, 0, 0, .08); border-radius: 18px; }
+    .two-col { display: flex; gap: 20px; align-items: flex-start; }
+    .label { width: 150px; flex-shrink: 0; font-weight: 700; color: #8f5f36; text-transform: uppercase; letter-spacing: .04em; font-size: 12px; padding-top: 2px; }
+    .section { border-top: 2px solid #ecd8c3; padding-top: 16px; margin-top: 18px; }
+    .section:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+    .text { font-size: 14px; line-height: 1.55; flex: 1; }
+    .header-name { font-size: 27px; font-weight: 700; margin-bottom: 4px; }
+    .header-role { font-size: 16px; color: #b57944; margin-bottom: 8px; font-weight: 600; }
+    .muted { color: #666; font-size: 13px; line-height: 1.5; }
+    .photo { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #f1e3d3; }
+    .project { margin-bottom: 14px; }
+    .project:last-child { margin-bottom: 0; }
+    .project-title { font-weight: 700; font-size: 15px; margin-bottom: 2px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .project-title .repo { font-weight: 400; font-size: 12px; }
+    .project-title .repo a { color: #8f5f36; border-bottom-color: rgba(143, 95, 54, .3); }
+    .project-stack { font-size: 12px; color: #888; margin-bottom: 4px; }
+    .project.compact { margin-top: 12px; }
+    .project.compact .project-stack { margin-bottom: 0; }
+    ul { margin: 4px 0 0 16px; padding: 0; }
+    li { margin-bottom: 3px; }
+    a { color: #1f1f1f; text-decoration: none; border-bottom: 1px solid rgba(31, 31, 31, .35); }
+    .skills div { margin-bottom: 5px; }
+    .skills span { font-weight: 700; }
+    .inline-edu { display: flex; gap: 28px; flex-wrap: wrap; }
+    @media (max-width: 760px) { body { padding: 14px; } .container { padding: 20px 18px; } .two-col { flex-direction: column; } .label { width: auto; } }
+    @media print { body { background: #fff; padding: 0; font-size: 12.5px; } .container { box-shadow: none; border-radius: 0; max-width: none; padding: 0; } .project, .section { break-inside: avoid; } }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label"><img class="photo" src="photo_2026-04-05_14-08-061.jpg" alt="Шаганов Егор"></div>
+        <div class="text">
+          <div class="header-name">Шаганов Егор</div>
+          <div class="header-role">Fullstack-разработчик</div>
+          <div class="muted">
+            <div>+7 901 281 12 46 · <a href="mailto:shaganovey@gmail.com">shaganovey@gmail.com</a> · <a href="https://github.com/shotganov" target="_blank" rel="noopener">github.com/shotganov</a></div>
+            <div>г. Иваново · готов к переезду · удалённый или офисный формат</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Обо мне</div>
+        <div class="text">Fullstack-разработчик с опытом самостоятельной разработки веб-приложений — от проектирования backend и базы данных до клиентской части. В проектах работал с аутентификацией и авторизацией, realtime-взаимодействием, тестированием, CI/CD и контейнеризацией.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Навыки</div>
+        <div class="text skills">
+          <div><span>Backend:</span> NestJS, Express (Node.js), ASP.NET Core (C#), Python, REST API, Socket.IO, JWT, Swagger</div>
+          <div><span>Frontend:</span> React, TypeScript, JavaScript (ES6+), Redux Toolkit, TanStack Query, Feature-Sliced Design</div>
+          <div><span>БД и ORM:</span> PostgreSQL, SQL Server, SQLite, Prisma, Entity Framework Core</div>
+          <div><span>Инфраструктура:</span> Docker, Docker Compose, GitLab CI, GitHub Actions, Linux, Jest, Sentry, Prometheus</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Проекты</div>
+        <div class="text">
+          <div class="project">
+            <div class="project-title">Социальная сеть<span class="repo"><a href="https://github.com/shotganov/Ripple" target="_blank" rel="noopener">GitHub ↗</a></span></div>
+            <div class="project-stack">NestJS · PostgreSQL · Prisma · Socket.IO · Docker Compose · React · TypeScript · Jest · GitLab CI · Sentry · Prometheus · pino</div>
+            <ul>
+              <li>Спроектировал схему БД на 10+ сущностей в Prisma и REST API к ней; реализовал личные чаты в реальном времени на Socket.IO</li>
+              <li>Построил клиент по Feature-Sliced Design с кешированием запросов в TanStack Query и бесконечной лентой</li>
+              <li>Выстроил наблюдаемость: Sentry для ошибок, структурированные логи через pino, метрики HTTP- и WebSocket-активности в Prometheus с выводом в админ-панель</li>
+              <li>Покрыл код модульными тестами на Jest и React Testing Library — 320 сценариев в 66 файлах, автозапуск в GitLab CI с порогом покрытия</li>
+              <li>Собрал монорепо и Docker Compose-окружение: приложение, БД и миграции поднимаются одной командой</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Доставка еды<span class="repo"><a href="https://github.com/shotganov/DeliverySushi" target="_blank" rel="noopener">GitHub ↗</a></span></div>
+            <div class="project-stack">ASP.NET Core · C# · SQL Server · Entity Framework · JWT · React · TypeScript</div>
+            <ul>
+              <li>Спроектировал backend по чистой архитектуре: 4 слоя (Domain, Application, Infrastructure, API) с изоляцией бизнес-логики от инфраструктуры</li>
+              <li>Реализовал аутентификацию на ASP.NET Identity и JWT, закрыл эндпоинты API авторизацией по ролям</li>
+              <li>Построил доменную модель и доступ к SQL Server через Entity Framework Core; собрал сценарий заказа от каталога до смены статуса в админ-панели</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Telegram-бот мониторинга цен<span class="repo"><a href="https://github.com/shotganov/ParseerBot" target="_blank" rel="noopener">GitHub ↗</a></span></div>
+            <div class="project-stack">Python · aiohttp · python-telegram-bot · SQLite</div>
+            <ul>
+              <li>Реализовал асинхронный опрос стороннего API на aiohttp с кешированием ответов и фоновой доставкой уведомлений в Telegram</li>
+              <li>Настроил автодеплой на VPS через GitHub Actions с запуском под systemd и автоперезапуском при сбое</li>
+            </ul>
+          </div>
+
+          <div class="project compact">
+            <div class="project-title">Глобальный чат<span class="repo"><a href="https://github.com/shotganov/GlobalChat" target="_blank" rel="noopener">GitHub ↗</a></span></div>
+            <div class="project-stack">SPA с API на Express: JWT-аутентификация, bcrypt, контракт задокументирован в Swagger · React · Redux Toolkit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Образование</div>
+        <div class="text"><strong>Ивановский государственный энергетический университет им. В.И. Ленина</strong><br>Бакалавриат, Программная инженерия · 2022—2026</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Курсы</div>
+        <div class="text"><strong>Т-Академия</strong> — Frontend-разработка</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="two-col">
+        <div class="label">Языки</div>
+        <div class="text"><strong>Русский</strong> — родной · <strong>Английский</strong> — B1</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

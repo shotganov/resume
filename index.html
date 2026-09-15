@@ -4,139 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Резюме — Шаганов Егор — React-разработчик</title>
+  <title>Резюме — Шаганов Егор — Fullstack-разработчик</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f8f6f2;
       color: #1f1f1f;
       margin: 0;
-      padding: 32px;
+      padding: 28px;
+      font-size: 14px;
     }
 
     .container {
-      max-width: 920px;
+      max-width: 900px;
       margin: 0 auto;
       background: #fff;
-      padding: 36px 40px;
+      padding: 30px 34px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
       border-radius: 18px;
     }
 
-    h1 {
-      margin: 0 0 24px;
-      font-size: 24px;
-      color: #b57944;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-
     .two-col {
       display: flex;
-      gap: 24px;
+      gap: 20px;
       align-items: flex-start;
     }
 
     .label {
-      width: 190px;
+      width: 150px;
       flex-shrink: 0;
       font-weight: 700;
       color: #8f5f36;
       text-transform: uppercase;
       letter-spacing: .04em;
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      font-size: 12px;
+      padding-top: 2px;
     }
 
     .section {
       border-top: 2px solid #ecd8c3;
-      padding-top: 22px;
-      margin-top: 26px;
+      padding-top: 16px;
+      margin-top: 18px;
+    }
+
+    .section:first-child {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
     }
 
     .text {
-      font-size: 15px;
-      line-height: 1.7;
+      font-size: 14px;
+      line-height: 1.55;
       flex: 1;
     }
 
     .header-name {
-      font-size: 30px;
+      font-size: 27px;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .header-role {
-      font-size: 18px;
+      font-size: 16px;
       color: #b57944;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-weight: 600;
     }
 
     .muted {
       color: #666;
-      font-size: 14px;
-      line-height: 1.6;
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     .photo {
-      width: 160px;
-      height: 160px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #f1e3d3;
     }
 
-    .experience {
-      margin-bottom: 24px;
-    }
-
-    .experience:last-child {
-      margin-bottom: 0;
-    }
-
-    .experience-period {
-      color: #5f5f5f;
-      font-size: 13px;
-      line-height: 1.4;
-      font-weight: 400;
-      text-transform: none;
-      letter-spacing: normal;
-    }
-
-    .experience-title {
-      font-weight: 700;
-      font-size: 17px;
-      margin-bottom: 0;
-      line-height: 1.3;
-    }
-
-    .experience-city {
-      color: #666;
-      font-size: 15px;
-      font-weight: 400;
-      margin-bottom: 4px;
-      line-height: 1.4;
-    }
-
-    .experience-role {
-      font-weight: 500;
-      font-size: 17px;
-      margin-top: 2px;
-      margin-bottom: 6px;
-      line-height: 1.3;
-    }
-
-    .experience-meta {
-      color: #777;
-      font-size: 13px;
-      margin-bottom: 8px;
-    }
-
     .project {
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
     .project:last-child {
@@ -145,17 +96,17 @@
 
     .project-title {
       font-weight: 700;
-      font-size: 16px;
-      margin-bottom: 4px;
+      font-size: 15px;
+      margin-bottom: 2px;
       display: flex;
       align-items: baseline;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
     }
 
     .project-title .repo {
       font-weight: 400;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .project-title .repo a {
@@ -163,51 +114,56 @@
       border-bottom-color: rgba(143, 95, 54, .3);
     }
 
-    .project-title .repo a:hover {
-      border-bottom-color: #b57944;
+    .project-stack {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 4px;
     }
 
-    .project-stack {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 6px;
+    .project.compact {
+      margin-top: 12px;
+    }
+
+    .project.compact .project-stack {
+      margin-bottom: 0;
     }
 
     ul {
-      margin: 8px 0 0 18px;
+      margin: 4px 0 0 16px;
       padding: 0;
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
 
     a {
       color: #1f1f1f;
       text-decoration: none;
       border-bottom: 1px solid rgba(31, 31, 31, .35);
-      transition: border-color .2s;
-    }
-
-    a:hover {
-      border-bottom-color: #b57944;
     }
 
     .skills div {
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
     .skills span {
       font-weight: 700;
     }
 
+    .inline-edu {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
     @media (max-width: 760px) {
       body {
-        padding: 16px;
+        padding: 14px;
       }
 
       .container {
-        padding: 24px 20px;
+        padding: 20px 18px;
       }
 
       .two-col {
@@ -218,319 +174,151 @@
         width: auto;
       }
     }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+        font-size: 12.5px;
+      }
+
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: none;
+        padding: 0;
+      }
+
+      .project,
+      .section {
+        break-inside: avoid;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Резюме</h1>
 
-    <!-- Шапка -->
     <div class="section">
       <div class="two-col">
-        <div class="label">
-          <img class="photo" src="photo_2026-04-05_14-08-061.jpg" alt="Шаганов Егор">
-        </div>
-
+        <div class="label"><img class="photo" src="photo_2026-04-05_14-08-061.jpg" alt="Шаганов Егор"></div>
         <div class="text">
           <div class="header-name">Шаганов Егор</div>
-          <div class="header-role">React-разработчик</div>
-
+          <div class="header-role">Fullstack-разработчик</div>
           <div class="muted">
-            <div><strong>Тел.:</strong> +7 901 281 12 46</div>
-            <div>г. Москва · удалённый или офисный формат · готов к переезду</div>
-            <div>
-              <a href="https://github.com/shotganov" target="_blank" rel="noopener">
-                github.com/shotganov
-              </a>
-              |
-              <a href="mailto:shaganovey@gmail.com">
-                shaganovey@gmail.com
-              </a>
-            </div>
+            <div>+7 901 281 12 46 · <a href="mailto:shaganovey@gmail.com">shaganovey@gmail.com</a> · <a
+                href="https://github.com/shotganov" target="_blank" rel="noopener">github.com/shotganov</a></div>
+            <div>г. Иваново · готов к переезду · удалённый или офисный формат</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Обо мне -->
     <div class="section">
       <div class="two-col">
         <div class="label">Обо мне</div>
-
-        <div class="text">
-          Бакалавр по направлению «Программная инженерия». Frontend-разработчик
-          с практическим опытом разработки на React и TypeScript. Работал над
-          веб-приложениями в команде, реализовывал пользовательские интерфейсы,
-          интеграцию с REST API и переиспользуемые компоненты. В учебных и
-          собственных проектах также работал с NestJS, ASP.NET Core,
-          PostgreSQL и WebSocket.
-        </div>
+        <div class="text">Fullstack-разработчик с опытом самостоятельной разработки веб-приложений — от проектирования
+          backend и базы данных до клиентской части. В проектах работал с аутентификацией и авторизацией,
+          realtime-взаимодействием, тестированием, CI/CD и контейнеризацией.</div>
       </div>
     </div>
 
-    <!-- Навыки -->
     <div class="section">
       <div class="two-col">
         <div class="label">Навыки</div>
-
         <div class="text skills">
-          <div>
-            <span>Frontend:</span>
-            React, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS
-          </div>
-
-          <div>
-            <span>SPA и состояние:</span>
-            Redux Toolkit, RTK Query, TanStack Query, Context API,
-            Feature-Sliced Design (FSD)
-          </div>
-
-          <div>
-            <span>UI и инструменты:</span>
-            Material UI, Tailwind CSS, Storybook, Figma,
-            Webpack, Git, Jest, GitLab CI
-          </div>
-
-          <div>
-            <span>Интеграции:</span>
-            REST API, WebSocket, JWT, Swagger · NestJS, Express (Node.js),
-            ASP.NET Core (C#), SQL
-          </div>
+          <div><span>Backend:</span> NestJS, Express (Node.js), ASP.NET Core (C#), Python, REST API, Socket.IO, JWT,
+            Swagger</div>
+          <div><span>Frontend:</span> React, TypeScript, JavaScript (ES6+), Redux Toolkit, TanStack Query,
+            Feature-Sliced Design</div>
+          <div><span>БД и ORM:</span> PostgreSQL, SQL Server, SQLite, Prisma, Entity Framework Core</div>
+          <div><span>Инфраструктура:</span> Docker, Docker Compose, GitLab CI, GitHub Actions, Linux, Jest, Sentry,
+            Prometheus</div>
         </div>
       </div>
     </div>
 
-    <!-- Опыт -->
     <div class="section">
       <div class="two-col">
-        <div class="label">
-          Опыт работы
-          <div class="experience-period">
-            Июнь 2025 — <br>
-            Июнь 2026 <br>
-            1 год
-          </div>
-        
-        </div>
-
+        <div class="label">Проекты</div>
         <div class="text">
-          <div class="experience">
-            <div class="experience-title">
-              Инвольта
-            </div>
-            <div class="experience-city">
-              Иваново (Ивановская область)
-            </div>
-            <div class="experience-role">
-              Frontend-разработчик
-            </div>
-
-            <div class="experience-meta">
-              React · TypeScript · Next.js · Redux Toolkit
-            </div>
-
+          <div class="project">
+            <div class="project-title">Социальная сеть<span class="repo"><a href="https://github.com/shotganov/Ripple"
+                  target="_blank" rel="noopener">GitHub ↗</a></span></div>
+            <div class="project-stack">NestJS · PostgreSQL · Prisma · Socket.IO · Docker Compose · React · TypeScript ·
+              Jest · GitLab CI · Sentry · Prometheus · pino</div>
             <ul>
-              <li>
-                Разрабатывал frontend веб-приложения на React и Next.js
-                с использованием TypeScript в составе команды.
+              <li>Спроектировал схему БД на 10+ сущностей в Prisma и REST API к ней; реализовал личные чаты в реальном
+                времени на Socket.IO</li>
+              <li>Построил клиент по Feature-Sliced Design с кешированием запросов в TanStack Query и бесконечной лентой
               </li>
-            
-              <li>
-                Интегрировал frontend с REST API, работал с получением,
-                обработкой и отображением серверных данных.
-              </li>
-            
-              <li>
-                Разрабатывал переиспользуемые React-компоненты и поддерживал
-                существующие UI-модули.
-              </li>
-            
-              <li>
-                Работал с Next.js при разработке страниц и функциональности
-                веб-приложения.
-              </li>
-            
-              <li>
-                Исправлял ошибки, дорабатывал существующий функционал
-                и участвовал в рефакторинге.
-              </li>
-            
-              <li>
-                Работал в команде с использованием Git и взаимодействовал
-                с другими разработчиками при реализации смежных задач.
+              <li>Выстроил наблюдаемость: Sentry для ошибок, структурированные логи через pino, метрики HTTP- и
+                WebSocket-активности в Prometheus с выводом в админ-панель</li>
+              <li>Покрыл код модульными тестами на Jest и React Testing Library — 320 сценариев в 66 файлах, автозапуск
+                в GitLab CI с порогом покрытия</li>
+              <li>Собрал монорепо и Docker Compose-окружение: приложение, БД и миграции поднимаются одной командой</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Доставка еды<span class="repo"><a
+                  href="https://github.com/shotganov/DeliverySushi" target="_blank" rel="noopener">GitHub ↗</a></span>
+            </div>
+            <div class="project-stack">ASP.NET Core · C# · SQL Server · Entity Framework · JWT · React · TypeScript
+            </div>
+            <ul>
+              <li>Спроектировал backend по чистой архитектуре: 4 слоя (Domain, Application, Infrastructure, API) с
+                изоляцией бизнес-логики от инфраструктуры</li>
+              <li>Реализовал аутентификацию на ASP.NET Identity и JWT, закрыл эндпоинты API авторизацией по ролям</li>
+              <li>Построил доменную модель и доступ к SQL Server через Entity Framework Core; собрал сценарий заказа от
+                каталога до смены статуса в админ-панели</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Telegram-бот мониторинга цен<span class="repo"><a
+                  href="https://github.com/shotganov/ParseerBot" target="_blank" rel="noopener">GitHub ↗</a></span>
+            </div>
+            <div class="project-stack">Python · aiohttp · python-telegram-bot · SQLite</div>
+            <ul>
+              <li>Реализовал асинхронный опрос стороннего API на aiohttp с кешированием ответов и фоновой доставкой
+                уведомлений в Telegram</li>
+              <li>Настроил автодеплой на VPS через GitHub Actions с запуском под systemd и автоперезапуском при сбое
               </li>
             </ul>
+          </div>
+
+          <div class="project compact">
+            <div class="project-title">Глобальный чат<span class="repo"><a
+                  href="https://github.com/shotganov/GlobalChat" target="_blank" rel="noopener">GitHub ↗</a></span>
+            </div>
+            <div class="project-stack">SPA с API на Express: JWT-аутентификация, bcrypt, контракт задокументирован в
+              Swagger · React · Redux Toolkit</div>
           </div>
         </div>
       </div>
     </div>
 
- 
-    <!-- <div class="section">
-      <div class="two-col">
-        <div class="label">Проекты</div>
-
-        <div class="text">
-
-          <div class="project">
-            <div class="project-title">
-              Социальная сеть
-              <span class="repo">
-                <a href="https://github.com/shotganov/Ripple" target="_blank" rel="noopener">
-                  GitHub ↗
-                </a>
-              </span>
-            </div>
-
-            <div class="project-stack">
-              React · TypeScript · TanStack Query · Redux Toolkit ·
-              Material UI · NestJS · WebSocket · PostgreSQL · Prisma ·
-              Jest · GitLab CI
-            </div>
-
-            Веб-приложение социальной сети с лентой постов и взаимодействием
-            пользователей.
-
-            <ul>
-              <li>
-                Построил структуру проекта по Feature-Sliced Design:
-                разделение на слои, переиспользуемые модули и контроль
-                направления импортов.
-              </li>
-
-              <li>
-                Организовал работу с серверными данными через TanStack Query:
-                бесконечная лента, кеширование и оптимистичные обновления
-                интерфейса.
-              </li>
-
-              <li>
-                Реализовал личные сообщения в реальном времени через WebSocket.
-              </li>
-
-              <li>
-                Разработал административную часть с модерацией контента,
-                статистикой, логированием и CI-проверками.
-              </li>
-            </ul>
-          </div>
-
-        
-          <div class="project">
-            <div class="project-title">
-              Доставка еды
-              <span class="repo">
-                <a href="https://github.com/shotganov/DeliverySushi" target="_blank" rel="noopener">
-                  GitHub ↗
-                </a>
-              </span>
-            </div>
-
-            <div class="project-stack">
-              React · TypeScript · ASP.NET Core · SQL Server ·
-              Entity Framework · JWT
-            </div>
-
-            Fullstack веб-приложение для сервиса доставки еды
-            с пользовательским интерфейсом и админ-панелью.
-
-            <ul>
-              <li>
-                Спроектировал сценарий заказа от каталога и корзины
-                до изменения статуса в административной панели.
-              </li>
-
-              <li>
-                Спроектировал backend по принципам чистой архитектуры:
-                слои Domain, Application, Infrastructure и API,
-                бизнес-логика изолирована от инфраструктуры.
-              </li>
-
-              <li>
-                Интегрировал React-клиент с защищённым REST API:
-                аутентификация через ASP.NET Identity и JWT.
-              </li>
-            </ul>
-          </div>
-
-         
-          <div class="project">
-            <div class="project-title">
-              Глобальный чат
-              <span class="repo">
-                <a href="https://github.com/shotganov/GlobalChat" target="_blank" rel="noopener">
-                  GitHub ↗
-                </a>
-              </span>
-            </div>
-
-            <div class="project-stack">
-              React · TypeScript · Redux Toolkit · Express · JWT
-            </div>
-
-            SPA глобального чата с авторизацией и защищённым доступом
-            к сообщениям.
-
-            <ul>
-              <li>
-                Оптимизировал отображение истории сообщений виртуализацией.
-              </li>
-
-              <li>
-                Организовал управление состоянием и авторизацией в клиенте
-                через Redux Toolkit и JWT.
-              </li>
-
-              <li>
-                Разработал и задокументировал API на Express:
-                JWT-аутентификация, хеширование паролей bcrypt и Swagger.
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Образование -->
     <div class="section">
       <div class="two-col">
         <div class="label">Образование</div>
-
-        <div class="text">
-          <strong>
-            Ивановский государственный энергетический университет
-          </strong>
-          <br>
-          Бакалавриат, Программная инженерия
-          <br>
-          2022 — 2026
-        </div>
+        <div class="text"><strong>Ивановский государственный энергетический университет им. В.И.
+            Ленина</strong><br>Бакалавриат, Программная инженерия · 2022—2026</div>
       </div>
     </div>
 
-    <!-- Курсы -->
     <div class="section">
       <div class="two-col">
         <div class="label">Курсы</div>
-
-        <div class="text">
-          <strong>Т-Академия</strong> — Frontend-разработка
-        </div>
+        <div class="text"><strong>Т-Академия</strong> — Frontend-разработка</div>
       </div>
     </div>
 
-    <!-- Языки -->
     <div class="section">
       <div class="two-col">
         <div class="label">Языки</div>
-
-        <div class="text">
-          <strong>Русский</strong> — родной
-          <br>
-          <strong>Английский</strong> — B2
-        </div>
+        <div class="text"><strong>Русский</strong> — родной · <strong>Английский</strong> — B1</div>
       </div>
     </div>
 
